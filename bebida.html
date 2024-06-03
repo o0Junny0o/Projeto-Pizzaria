@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas</title>
+    <style>
+        body{
+            font-family: monospace;
+            text-align: left;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #F7F6DE;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid;
+            padding: 8px;
+            text-align: left;
+        }
+        th{
+            font-weight: bold;
+            font-size: large;
+        }
+
+        h1{
+            text-align: left;
+            color: #B18EB6;
+        } 
+        h2{
+            text-align: left;
+        }
+
+        .btn{
+            margin-top: 20px;
+            padding: 5px 10px;
+            font-size: 16px;
+            background-color: cadetblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover{
+            background-color:rgb(53, 87, 88);
+        }
+
+        .sem-estoque{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <img src="./logo.svg" alt="Logo" height="300px" width="300px">
+    <div id="estoque">
+        <h1>Bebidas disponíveis</h1>
+
+        <table id="produtos">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="produtos-corpo"></tbody>
+        </table>
+    </div>
+
+    <hr>
+
+    <div id="cart">
+        <h1>Bebidas Selecionadas</h1>
+        <br>
+        <table id="carrinho">
+            <thead id="carrinho-head"></thead>
+            <tbody id="carrinho-corpo"></tbody>
+        </table>
+    </div>
+
+    <div id="resumoPizza">
+        <h1>Pizza selecionada</h1>
+        <h2>Descrição Pizza</h2>
+        <table>
+            <tr>
+                <td id="pedidoDescricao"></td>
+            </tr>
+        </table>
+    </div>
+    <h3>Total da Pizza: R$<span id="totalPizza">00,00</span></h3>
+    <h2>Total do pedido: R$<span id="total">00,00</span></h2>
+
+
+    <script src="./bebida.js"></script>  
+</body>
+</html>
