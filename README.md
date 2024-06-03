@@ -1,2 +1,2 @@
 # Projeto-Pizzaria
-Projeto de pizzaria para aula de Desenvolvimento Web III
+Projeto de um simples site de pizaria para praticar o uso de Javascript para automatização de processos
