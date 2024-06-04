@@ -273,8 +273,8 @@ document.addEventListener('DOMContentLoaded',function(){
         if(queijoExtraCheckbox){
             pizzaPersonalizada = new QueijoExtra(pizzaPersonalizada)
         }
-        let baconExtraCheckbox = document.querySelector('input[name="extra-bacon"]:checked')
-        if(baconExtraCheckbox){
+        let estrelaExtraCheckbox = document.querySelector('input[name="extra-estrelinha"]:checked')
+        if(estrelaExtraCheckbox){
             pizzaPersonalizada = new EstrelinhasDoces(pizzaPersonalizada)
         }
         let pepperoniExtraCheckbox = document.querySelector('input[name="extra-pepperoni"]:checked')
@@ -295,8 +295,8 @@ document.addEventListener('DOMContentLoaded',function(){
         if(azeiteCheckbox){
             pizzaPersonalizada = new AzeiteOpcional(pizzaPersonalizada)
         }
-        let oreganoCheckbox = document.querySelector('input[name="opcionais-oregano"]:checked')
-        if(oreganoCheckbox){
+        let gliterCheckbox = document.querySelector('input[name="opcionais-gliter"]:checked')
+        if(gliterCheckbox){
             pizzaPersonalizada = new GliterComestivel(pizzaPersonalizada)
         }
         let pimentaCheckbox = document.querySelector('input[name="opicionais-pimenta"]:checked')

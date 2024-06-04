@@ -14,12 +14,12 @@ app.get('/',(req, res) =>{
         }
     })
 })
-app.get('/Logo.png',(req, res) =>{
-    fs.readFile(path.join(__dirname, 'Logo.png'), (err,data)=>{
+app.get('/Logo.svg',(req, res) =>{
+    fs.readFile(path.join(__dirname, 'Logo.svg'), (err,data)=>{
         if(err){
             res.status(500).send("500 - Erro Interno do Servidor")
         }else{
-            res.status(200).type('png').send(data)
+            res.status(200).type('image/svg+xml').send(data)
         }
     })
 })

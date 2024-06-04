@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "Júlia Pires de Oliveira",
+  "author": "Julia Pires de Oliveira, Vitor Hugo Cavalcante Gomes",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"

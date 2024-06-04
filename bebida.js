@@ -168,4 +168,3 @@ document.addEventListener('DOMContentLoaded', function(){
         pedidoDetailsElement.innerHTML = '<p> Não foi possivel recuperar os detalhes do pedido<p>'
     }
 })
-
